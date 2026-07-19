@@ -1,0 +1,211 @@
+
+%-------------------------
+% Resume in Latex
+%-------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{graphicx}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+% Force all text and links to black
+\usepackage{xcolor}
+\color{black}
+\hypersetup{
+  colorlinks=false,
+  allbordercolors=white
+}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries\color{black}
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+        {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+        \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+          \textbf{#1} & \textbf{\small #2} \\
+          \textit{\small#3} & \textit{\small #4} \\
+        \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+        \item
+        \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+          \small#1 & \textbf{\small }\\
+        \end{tabular*}\vspace{-7pt}
+}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+        {\Huge \scshape \textcolor{black}{Gokulraj N}} \\ \vspace{1pt}
+        Salem, Tamil Nadu \\ \vspace{1pt}
+        \small \raisebox{-0.1\height}\faPhone\ +91 8015573223 \quad
+        \href{mailto:gokulrajofficial123@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{gokulrajofficial123@gmail.com}} \quad
+        \href{https://www.linkedin.com/in/gokulraj-n-452438360/}{\raisebox{-0.2\height}\faLinkedin\ \underline{linkedin.com/in/gokulraj-n}} \\ \vspace{4pt}
+        \href{https://github.com/Gokulraj-N80}{\raisebox{-0.2\height}\faGithub\ \underline{github.com/Gokulraj-N80}} \quad
+        \href{https://portfolio-gokulraj.netlify.app/}{\raisebox{-0.2\height}\faGlobe\ \underline{portfolio-gokulraj.netlify.app}}
+        \vspace{-8pt}
+\end{center}
+
+%-----------CAREER OBJECTIVE-----------
+\section{Career Objective}
+\small{
+Motivated software developer with a passion for learning and a track record of adapting quickly to new technologies and programming languages. Actively seeking opportunities to contribute my skills and expertise to projects that foster professional growth and enable me to make a meaningful impact.
+}
+\vspace{-12pt}
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+        \small{\item{
+         \textbf{Programming Languages}{: Java, Python, C} \\
+         \textbf{Frameworks}{: Spring Boot} \\
+         \textbf{Web Technologies}{: HTML, CSS, JavaScript} \\
+         \textbf{Database}{: SQL, MySQL} \\
+         \textbf{Tools}{: VS Code, Eclipse} \\
+         \textbf{Version Control}{: Git, GitHub}
+        }}
+ \end{itemize}
+ \vspace{-16pt}
+
+%-----------INTERNSHIP-----------
+\section{Internship}
+  \resumeSubHeadingListStart
+        \resumeSubheading
+          {Emglitz Technologies}{}
+          {Java Developer Intern}{}
+              \resumeItemListStart
+                \resumeItem{Developed intermediate-level Java programming skills with focus on object-oriented principles.}
+                \resumeItem{Gained hands-on experience in backend development, debugging, and Eclipse IDE.}
+                \resumeItem{Successfully completed Bus Ticket Booking System project during internship tenure.}
+            \resumeItemListEnd
+  \resumeSubHeadingListEnd
+\vspace{-16pt}
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+    \resumeProjectHeading
+    {\textbf{Bus Ticket Booking System} $|$ \emph{Java, Spring Boot, MySQL} $|$ \href{https://github.com/Gokulraj-N80/Bus-Booking-System}{\textcolor{black}{(GitHub)}}}
+
+    \resumeItemListStart
+    \resumeItem{Tech Stack: Java, Spring Boot, Spring Security, OAuth 2.0, MySQL, HTML, CSS, JavaScript}
+    \resumeItem{Developed a full-stack \textbf{Bus Ticket Booking System} with separate \textbf{Admin and User modules}.}
+    \resumeItem{Implemented \textbf{Google OAuth 2.0 login} and role-based authorization using \textbf{Spring Security}.}
+    \resumeItem{Built \textbf{RESTful APIs} for bus management, route search, seat availability, and ticket booking with \textbf{MySQL} database integration.}
+    \resumeItemListEnd
+        \resumeProjectHeading
+        {\textbf{ATM Machine Simulation} $|$ \emph{Java}}
+
+        \resumeItemListStart
+        \resumeItem{Developed a Java-based \textbf{ATM system} for deposit, withdrawal, and balance inquiry operations.}
+        \resumeItem{Implemented \textbf{OOP principles} and exception handling to ensure secure and reliable transactions.}
+        \resumeItemListEnd
+    \resumeSubHeadingListEnd
+    \vspace{-15pt}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+        \resumeSubheading
+          {Muthayammal Engineering College}{2022 -- 2026}
+          {Bachelor of Engineering in Computer Science and Engineering (CGPA: 8.05)}{Rasipuram, Tamil Nadu}
+        \resumeSubheading
+          {The Gugai Higher Secondary School}{2020 -- 2022}
+          {HSC (2022): 77.3\%}{Salem, Tamil Nadu}
+        \resumeSubheading
+          {The Gugai Higher Secondary School}{2018 -- 2020}
+          {SSLC (2020): 72.3\%}{Salem, Tamil Nadu}
+  \resumeSubHeadingListEnd
+\vspace{-16pt}
+
+%-----------ACHIEVEMENTS-----------
+\section{Achievements}
+ \begin{itemize}[leftmargin=0in, label={}]
+        \resumeItemListStart
+            \resumeItem{Solved \textbf{180+} problems on \textbf{LeetCode}, improving data structures and algorithm skills.}
+            \resumeItem{Earned a \textbf{Java (Basic)} certification from \textbf{HackerRank}.}
+            \resumeItem{Attained a \textbf{5-star} proficiency in \textbf{Java} on HackerRank.}
+            \resumeItem{Completed \textbf{NPTEL Silver Certificate} -- Introduction To Machine Learning.}
+          \resumeItemListEnd
+ \end{itemize}
+ \vspace{-16pt}
+
+%-----------SOFT SKILLS-----------
+\section{Soft Skills}
+ \begin{itemize}[leftmargin=0in, label={}]
+        \resumeItemListStart
+            \resumeItem{Teamwork $|$ Adaptability $|$ Problem Solving $|$ Quick Learner}
+          \resumeItemListEnd
+ \end{itemize}
+ \vspace{-16pt}
+
+%-----------PROFILE LINKS-----------
+\section{Profile Links}
+ \begin{itemize}[leftmargin=0in, label={}]
+        \resumeItemListStart
+            \resumeItem{\href{https://portfolio-gokulraj.netlify.app/}{\textcolor{black}{Portfolio Website}}}
+            \resumeItem{\href{https://leetcode.com/u/Gokul_raj_n/}{\textcolor{black}{LeetCode}}}
+            \resumeItem{\href{https://github.com/Gokulraj-N80}{\textcolor{black}{GitHub}}}
+            \resumeItem{\href{https://www.linkedin.com/in/gokulraj-n-452438360/}{\textcolor{black}{LinkedIn}}}
+            \resumeItem{\href{https://www.hackerrank.com/profile/gokulrajofficia1}{\textcolor{black}{HackerRank}}}
+          \resumeItemListEnd
+ \end{itemize}
+ \vspace{-16pt}
+
+\end{document}
